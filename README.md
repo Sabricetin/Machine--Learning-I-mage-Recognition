@@ -23,3 +23,5 @@ Bu kod, kullanıcıların fotoğraf seçmelerini ve seçilen fotoğrafı makine 
 ### Görüntü Tanıma İşlevi
 
 - `recognizerImage(image:)`: Seçilen fotoğrafı makine öğrenmesi modeliyle analiz eder ve sonuçları `resultLabel`'da gösterir.
+
+![Simulator Screen Recording - iPhone 15 Pro - 2024-08-05 at 14 28 19](https://github.com/user-attachments/assets/368f2df3-a027-4af3-81af-2e9c94c1da8f)
