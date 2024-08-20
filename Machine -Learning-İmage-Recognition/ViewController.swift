@@ -10,12 +10,18 @@ class ViewController: UIViewController, PHPickerViewControllerDelegate {
     @IBOutlet weak var translatedLabel: UILabel!
     @IBOutlet weak var changeButton: UIButton!
     
+    
+    @IBOutlet weak var button: UIButton!
+    
+    
     var chosenImage = CIImage()
     
     override func viewDidLoad() {
         
         
-       
+        roundCorners(of: resultLabel, radius: 10)
+        roundCorners(of: translatedLabel, radius: 10)
+        roundCorners(of: button, radius: 10 , borderColor: nil)
         
         resultLabel.numberOfLines = 0
         resultLabel.lineBreakMode = .byWordWrapping
@@ -164,5 +170,18 @@ class ViewController: UIViewController, PHPickerViewControllerDelegate {
         }
 
         dataTask.resume()
+        
+        
+    }
+    
+    func roundCorners ( of view: UIView , radius : CGFloat, borderWidht: CGFloat = 0 , borderColor : UIColor? = nil ) {
+        
+        view.layer.cornerRadius = radius
+        view.layer.masksToBounds = true
+        
+        if borderWidht > 0 {
+            view.layer.borderWidth = borderWidht
+            view.layer.borderColor = borderColor?.cgColor
+        }
     }
 }

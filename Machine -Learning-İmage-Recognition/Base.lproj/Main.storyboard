@@ -25,30 +25,33 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="İngilizce :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UcN-KR-lyv">
                                 <rect key="frame" x="20" y="478" width="374" height="50"/>
+                                <color key="backgroundColor" red="0.062745098040000002" green="0.094117647060000004" blue="0.12549019610000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="I6J-TL-eDB"/>
                                     <constraint firstAttribute="height" constant="50" id="LMX-UG-d8D"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Türkçe :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dlh-x3-5U2">
                                 <rect key="frame" x="20" y="578" width="374" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="QN0-bn-f30"/>
                                     <constraint firstAttribute="width" constant="374" id="oNS-RX-on0"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GLW-pN-JIf">
                                 <rect key="frame" x="20" y="678" width="374" height="50"/>
+                                <color key="backgroundColor" systemColor="labelColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="374" id="Bbb-LR-d3B"/>
                                     <constraint firstAttribute="height" constant="50" id="fOc-ZO-RfF"/>
                                 </constraints>
+                                <color key="tintColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Change"/>
                                 <connections>
@@ -75,7 +78,8 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="changeButton" destination="GLW-pN-JIf" id="wKM-z4-hjF"/>
+                        <outlet property="button" destination="GLW-pN-JIf" id="lHb-nb-Gkt"/>
+                        <outlet property="changeButton" destination="GLW-pN-JIf" id="oSW-UB-2FI"/>
                         <outlet property="imageView" destination="fBq-3j-4c9" id="HO8-zP-oPK"/>
                         <outlet property="resultLabel" destination="UcN-KR-lyv" id="jzI-FO-gRh"/>
                         <outlet property="translatedLabel" destination="dlh-x3-5U2" id="irf-uc-M9q"/>
@@ -88,6 +92,9 @@
     </scenes>
     <resources>
         <image name="select" width="285" height="275"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
